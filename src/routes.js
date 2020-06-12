@@ -10,6 +10,7 @@ Vue.use(VueRouter)
 export default new VueRouter({
     mode: 'history',
     routes: [
+	{path: '/', redirect: '/Login'},
       {path: '/Tareas', component: Tareas},
       {path: '/Login', component: Login},
     ]
